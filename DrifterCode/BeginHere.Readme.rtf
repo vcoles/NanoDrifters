@@ -1,0 +1,26 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww24700\viewh8440\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 To begin with the drifters.\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	1.	}Install the Arduino IDE https://www.arduino.cc/en/Main/Software\
+{\listtext	2.	}Install the moteino libraries by opening the IDE and choosing sketch then manage libraries. Search for moteino ; download RFM69_LowPowerLab; download SPIFlash_LowPowerLab; These are libraries required to work with the radio communications and the flash memory\
+{\listtext	3.	}Open Preferences in the Arduino IDE. Add the LowPowerLab board to the \'93Additional Boards Manager URLS: \'93https://lowpowerlab.github.io/MoteinoCore/package_LowPowerLab_index.json\'94. Close preferences\
+{\listtext	4.	}Open the tools tab in the Arduino IDE and select Board Manager; and find the Moteino AVR Boards by LowPowerLab. Confirm that it includes the MoteinoMEGA, and install. This is a significant download and may take a moment. This download contains information about the moteino board that forms the core of the drifter computing.\
+{\listtext	5.	}Download the Drifter codes \
+{\listtext	6.	}Goto the Arduino IDE, then goto tab file then open the drifter code and allow the Ardoino IDE to move the code into a log directory.\
+{\listtext	7.	}Goto the Arduino IDE, tools, board and select the MoteinoMEGA\
+{\listtext	8.	}Verify the code using the leftmost circle at the top of the IDE code window with a check mark. It will find the remaining libraries that you are missing. These could be the Adafruit GPS update; or others, use manage libraries to install or update.\
+{\listtext	9.	}Go to tools, Select Port, select usbserial.\
+{\listtext	10.	}Go to tools select serial monitor and change the baud rate to what the code is using (115200).\
+{\listtext	11.	}Go to upload (second circle in window with right arrow). Check that red light on the USB connector is red as it uploads\
+{\listtext	12.	}Commence with instructions to load node software as in the readme file. \
+{\listtext	13.	}It should begin running and the diodes will flash, and the GPS chip will flash red as it gets a position fix.\
+	\
+}
